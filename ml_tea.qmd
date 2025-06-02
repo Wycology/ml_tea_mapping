@@ -16,7 +16,7 @@ format:
     code-fold: true
     number-sections: true
 editor: visual
-backgroundcolor: lightgray
+backgroundcolor: white
 bibliography: references.bib
 ---
 
@@ -32,13 +32,17 @@ While the case study is centered on tea mapping, the general approach can be ada
 
 Inside the data folder we have the following files that are projected to epsg code 3857:
 
-i\. **roi_p.gpkg**: This is the region of interest (roi) geopackage for the tea plantations in Embu, Kenya.
+<ol type="i">
 
-ii\. **s2_large.tif**: The is the Sentinel-2 image for the region of interest.
+<li> **roi_p.gpkg**: This is the region of interest (roi) geopackage for the tea plantations in Kenya.</li>
 
-iii\. **vect.gpkg**: This is the polygons of tea and non-tea areas for model training.
+<li> **s2_large.tif**: The is the Sentinel-2 image for the region of interest.</li>
 
-iv\. **eval.gpkg**: This is observed 200 points consisting of 100 true tea and 100 non tea for testing the model performance.
+<li> **vect.gpkg**: This is the polygons of tea and non-tea areas for model training.</li>
+
+<li> **eval.gpkg**: This is observed 200 points consisting of 100 true tea and 100 non tea for testing the model performance.</li>
+
+</ol>
 
 ## **Training data: tea and no tea points**
 
@@ -53,9 +57,9 @@ We begin by loading the boundary data using the `vect` function in `terra` packa
 #| fig-cap: "Study area extent"
 #| message: false
 
-library(terra)
-library(tidyterra)
-library(tidyverse)
+library(terra)      # version 1.8.54
+library(tidyterra)  # version 0.7.2
+library(tidyverse)  # version 2.0.0
 
 study_area <- vect(x = "data/roi_p.gpkg")
 
