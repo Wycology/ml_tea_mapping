@@ -414,14 +414,13 @@ df_area |>
 
 Manual monitoring of tea plantations is costly and limited in scale. Using machine learning models and high resolution satellite images, we can automate and enhance the monitoring process, with applications including:
 
-- **Pest and disease detection**: Early identification for timely detection.
-- **Drought monitoring**: Could help detect water stress for irrigation planning.
-- **Yield estimation**: Predicting yield based on spectral data and plant health.
-- **Damage assessment**: Identifying hail and other weather related impacts.
-- **Encroachment detection**: Monitoring illegal expansion of plantations into protected areas.
-- **Carbon quantification**: This can make it possible to efficiently quantify carbon in tea plantations.
-- **Tacking tea shift**: Monitoring shifts in tea cultivation due to climate change and other reasons over time.
-
+-   **Pest and disease detection**: Early identification for timely detection.
+-   **Drought monitoring**: Could help detect water stress for irrigation planning.
+-   **Yield estimation**: Predicting yield based on spectral data and plant health.
+-   **Damage assessment**: Identifying hail and other weather related impacts.
+-   **Encroachment detection**: Monitoring illegal expansion of plantations into protected areas.
+-   **Carbon quantification**: This can make it possible to efficiently quantify carbon in tea plantations.
+-   **Tacking tea shift**: Monitoring shifts in tea cultivation due to climate change and other reasons over time.
 
 ## **Conclusion: Key Observations from the workflow**
 
@@ -430,7 +429,6 @@ The map of tea *Camellia sinensis* achieved superb accuracy in central Kenya reg
 ## **Exercise: Use the tea_model to predict tea elsewhere or at different time**
 
 Since we have built our model, we can use it to make predictions across space and time. For instance, we can use the model to make prediction in another country, say Uganda. We can also use the same model to make predictions into the past, say 2020.
-
 
 **Feel free to reach us out if you got any questions** [Land Economics Group](https://www.ilr1.uni-bonn.de/en/research/research-groups/land-economics).
 
